@@ -1,0 +1,7 @@
+<ActionBar title="Stations"></ActionBar>
+
+<ListView [items]="stations" class="list-group">
+  <ng-template let-station="item">
+    <Label [text]="station.name" (tap)="onStationTap(station.id)" class="list-group-item"></Label>
+  </ng-template>
+</ListView>

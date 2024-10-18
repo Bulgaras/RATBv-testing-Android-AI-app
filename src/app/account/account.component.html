@@ -1,0 +1,7 @@
+<ActionBar title="My Account"></ActionBar>
+
+<StackLayout class="p-4">
+  <TextField [(ngModel)]="phoneNumber" hint="Phone Number" class="input m-2"></TextField>
+  <TextField [(ngModel)]="email" hint="Email" class="input m-2"></TextField>
+  <Button text="Save" (tap)="onSave()" class="btn btn-primary m-2"></Button>
+</StackLayout>

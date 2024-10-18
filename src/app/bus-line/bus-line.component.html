@@ -1,0 +1,10 @@
+<ActionBar [title]="'Bus Line ' + busLineId"></ActionBar>
+
+<ListView [items]="stations" class="list-group">
+  <ng-template let-station="item">
+    <GridLayout columns="*, auto" class="list-group-item">
+      <Label [text]="station.name" col="0"></Label>
+      <Label [text]="station.time" col="1"></Label>
+    </GridLayout>
+  </ng-template>
+</ListView>
